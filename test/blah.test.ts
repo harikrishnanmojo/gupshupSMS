@@ -1,7 +1,8 @@
-import { sum } from '../src';
+import { MessageService } from '../src';
 
 describe('blah', () => {
-  it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
+  const messageService = new MessageService();
+  it('message service is defined', async () => {
+    expect(messageService).toBeDefined();
   });
 });

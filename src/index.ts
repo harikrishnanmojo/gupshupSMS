@@ -4,6 +4,7 @@ import { SingleMessage } from './interfaces/single-message.interface';
 
 export class MessageService {
   sendMessagePost(data: SingleMessage) {
+    //TODO: Validate data
     return axios.post(url, data);
   }
 

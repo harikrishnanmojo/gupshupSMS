@@ -1,13 +1,16 @@
+import { MessageFormat } from '../enums/message-format.enum';
+import { MessageType } from '../enums/message-type.enum';
+
 export interface SingleMessage {
   userid: string;
   password: string;
-  send_to: number[];
+  send_to: string | string[];
   msg: string;
   auth_scheme: string;
   method: string;
   v: number;
-  format: 'TEXT' | 'XML' | 'JSON';
-  msg_type: 'Text' | 'Unicode_text' | 'flash' | 'VCARD' | 'binary';
+  format: MessageFormat;
+  msg_type: MessageType;
   port?: number;
   timestamp?: Date;
   mask?: string;
