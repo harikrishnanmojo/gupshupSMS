@@ -1,3 +1,8 @@
+*.log
+.DS_Store
+node_modules
+dist
+
 # Logs
 logs
 *.log
@@ -102,3 +107,7 @@ dist
 
 # TernJS port file
 .tern-port
+node_modules
+
+# vscode settings
+.vscode
